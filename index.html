@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link href="./output.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <title>Frontend Mentor | Expenses chart component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+      * {
+        padding: 0;
+      }
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-weight: normal;
+        font-size: 18px;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main
+      class="w-full bg-cream min-h-screen flex justify-center items-center p-3"
+    >
+      <section class="flex flex-col rounded-xl overflow-hidden w-fit gap-5">
+        <div
+          class="flex justify-between items-center p-4 bg-softRed rounded-xl"
+        >
+          <div class="text-paleOrange flex flex-col">
+            <span>My balance</span>
+            <span class="text-2xl font-bold">$921.48</span>
+          </div>
+
+          <span
+            ><svg
+              width="72"
+              height="48"
+              viewBox="0 0 72 48"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g fill="none" fill-rule="evenodd">
+                <circle fill="#382314" cx="48" cy="24" r="24" />
+                <circle stroke="#FFF" stroke-width="2" cx="24" cy="24" r="23" />
+              </g></svg
+          ></span>
+        </div>
+
+        <div class="p-6 bg-paleOrange rounded-xl">
+          <h1 class="text-darkBrown text-2xl font-bold mb-14">
+            Spending - Last 7 days
+          </h1>
+
+          <div class="flex w-full gap-2" id="container"></div>
+
+          <hr class="bg-cream text-cream py-[0.4px] my-6" />
+
+          <div class="flex justify-between items-center w-full">
+            <div class="flex flex-col">
+              <span class="text-mediumBrown text-sm">Total this month</span>
+              <span class="text-3xl text-darkBrown font-bold">$478.33</span>
+            </div>
+            <div class="flex flex-col justify-end">
+              <span class="ml-auto font-bold text-darkBrown text-sm"
+                >+2.4%</span
+              >
+              <span class="text-mediumBrown text-sm">from last month</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- My balance $921.48 Spending - Last 7 days mon tue wed thu fri sat sun Total
+    this month $478.33 +2.4% from last month -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
